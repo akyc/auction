@@ -2,6 +2,6 @@ FROM php:8.4-fpm-alpine
 
 RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
 
-COPY ./common/php-fpm/conf.d /usr/local/etc/php/conf.d
+COPY ./docker/common/php-fpm/conf.d /usr/local/etc/php/conf.d
 
 WORKDIR /app
